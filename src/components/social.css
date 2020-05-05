@@ -1,0 +1,13 @@
+.App .social {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App .social img {
+  height: 50px;
+}
+
+.App .social img.twitter {
+  height: 60px;
+}

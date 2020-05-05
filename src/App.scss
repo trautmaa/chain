@@ -1,0 +1,115 @@
+.App {
+	text-align: center;
+	/* background-color: #231c35; */
+	background-color: #ffffff;
+	font-family: "Quantico", sans-serif;
+	max-width: 1000px;
+	margin: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	.App-header .flex {
+		margin-bottom: 2rem;
+		margin-top: 1rem;
+		display: flex;
+		align-items: center;
+		color: black;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		font-family: "Bangers", cursive;
+		.title-block {
+			display: flex;
+			.titles {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				h1 {
+					margin: 0.75rem;
+					font-size: 3rem;
+				}
+				.subtitle {
+					font-family: "Montserrat", sans-serif;
+				}
+			}
+		}
+	}
+	.text-content {
+		text-align: left;
+		a {
+			display: inline-block;
+		}
+	}
+}
+
+header img {
+	width: 75px;
+}
+
+.body img {
+	height: 200px;
+	align-self: center;
+	border-radius: 3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Bangers";
+}
+
+p,
+a,
+label,
+button {
+	font-family: "Montserrat", sans-serif;
+}
+
+input,
+textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+button {
+	cursor: pointer;
+	padding: 12px; /* Some padding */
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	font-size: 1rem;
+}
+
+a {
+	color: #000000;
+} /* Unvisited link  */
+a:visited {
+	color: #000000;
+} /* Visited link    */
+a:hover {
+	color: #231c35;
+} /* Mouse over link */
+a:active {
+	color: #000000;
+}
+
+.hero-logo {
+	margin-bottom: 4rem;
+}
+
+footer {
+	margin-top: auto;
+}
