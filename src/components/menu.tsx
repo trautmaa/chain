@@ -3,7 +3,7 @@ import './menu.scss';
 import { NavLink } from 'react-router-dom';
 
 export const Menu = () => {
-	const routes = [ 'contact', 'about', 'posts' ];
+	const routes = [ 'about', 'contact', 'posts' ];
 
 	return (
 		<div className="menu">

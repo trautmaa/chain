@@ -11,7 +11,7 @@
 	display: flex;
 	flex-direction: column;
 
-	.App-header .flex {
+	.flex {
 		margin-bottom: 2rem;
 		margin-top: 1rem;
 		display: flex;
@@ -42,6 +42,10 @@
 			display: inline-block;
 		}
 	}
+}
+
+img {
+	max-width: 90vw;
 }
 
 header img {
@@ -112,4 +116,39 @@ a:active {
 
 footer {
 	margin-top: auto;
+}
+
+@media (max-width: 900px) {
+	div.App {
+		.flex {
+			justify-content: center;
+			flex-direction: column;
+			.title-block {
+				.titles h1 {
+					font-size: 2rem;
+				}
+				.titles .subtitle {
+					font-size: 0.75rem;
+				}
+
+				img {
+					width: 35px;
+					height: 65px;
+				}
+			}
+			.menu {
+				margin-top: 0.5rem;
+				nav ul li a {
+					font-size: 0.9rem;
+				}
+			}
+		}
+	}
+	.page-wrapper .post {
+		flex-direction: column;
+		img {
+			margin-left: 0;
+			align-self: center;
+		}
+	}
 }

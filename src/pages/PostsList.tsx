@@ -1,7 +1,7 @@
 import React from 'react';
 import './posts.scss';
 import { posts, PostType } from '../postsConfig';
-import chain from '../assets/chainblack.png';
+import chain from '../assets/chainpurple.png';
 import { genPostUrl } from '../utils/utils';
 
 export const PostsList: React.FC = () => {
@@ -19,7 +19,17 @@ export const Post: React.FC<{ post: PostType; abbreviated?: boolean }> = ({ post
 					<p>{content}</p>
 				</div>
 				{post.imgSrc && <img src={post.imgSrc} alt={post.title} />}
-				{!post.imgSrc && <img src={chain} alt={post.title} />}
+				{!post.imgSrc && (
+					<img
+						style={{
+							width: 'auto',
+							height: 'auto',
+							maxWidth: '15rem'
+						}}
+						src={chain}
+						alt={post.title}
+					/>
+				)}
 			</div>
 		</a>
 	);

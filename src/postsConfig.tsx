@@ -14,11 +14,11 @@ export const posts: PostType[] = [
 	{
 		title: '2020 Tryouts',
 		primaryContent: (<>
-			<p>No roster spot is guaranteed, and we're excited to find the best players from the Southeast. 
+			<p>We're excited to find the best players from the Southeast. 
 			We are hoping to host tryouts late May or early June, but those dates may change due to Covid-19.</p>
 		</>),
 		content: <p>For the most up-to-date information, please follow us on 
-			<a rel="noopener noreferrer" target="_blank" href={TWITTER_LINK}>Twitter</a> or <a href="/contact">reach out</a>.</p>,
+			{' '}<a rel="noopener noreferrer" target="_blank" href={TWITTER_LINK}>Twitter</a>.</p>,
 		imgSrc: team,
 		stub: '2020-tryouts'
 	},
