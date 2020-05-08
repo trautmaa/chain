@@ -1,5 +1,4 @@
 import React from 'react';
-import { TWITTER_LINK, FACEBOOK_LINK } from '../config';
 
 const Contact = () => {
 	const formDefault = {
